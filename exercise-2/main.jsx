@@ -1,8 +1,15 @@
-// Main.jsx file
 
-// Create a simple component
-    // In your render function...
+var MyComponent = React.createClass( {
+	render:function() {
+		var text1 = "Hello, my name is NAME";
+		var text2 = "I am interested in INTEREST";
+		return (
+			<div>
+				<p>{text}</p>
+				<p>{text2}</p>
+			</div>
+		)
+	}
+});
 
-            // Return div with two paragraphs
-
-// Render your component in the `main` section
+ReactDOM.render(<MyComponent/>, document.querySelector('main'));
